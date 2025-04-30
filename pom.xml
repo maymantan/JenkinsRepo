@@ -35,8 +35,9 @@
                <suiteXmlFile>testng.xml</suiteXmlFile>  <!-- Path to your TestNG XML file -->
            </suiteXmlFiles>
            <!-- Optional:  Configure parallelism and thread count -->
-           <parallel>methods</parallel>
-           <threadCount>10</threadCount>
+           <systemPropertyVariables>
+           	<browser>${browser}</browser>
+           </systemPropertyVariables>
        </configuration>
    </plugin>
 	</plugins>
